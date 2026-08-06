@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://veigapunk.github.io/plazir-15-site/sitemap.xml
