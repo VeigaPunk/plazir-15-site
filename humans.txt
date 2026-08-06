@@ -1,9 +1,0 @@
-/* TEAM */
-Curator: VeigaPunk
-Site: https://veigapunk.github.io/
-
-/* SITE */
-Last update: 2026-08-06
-Standards: HTML5, CSS3, progressive enhancement
-Components: Fan codex for Plazir-15 (The Mandalorian Ch. 22)
-Notes: Unofficial non-commercial homage — not Lucasfilm

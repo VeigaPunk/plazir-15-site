@@ -1,6 +1,0 @@
-# Plazir-15 Fan Codex — static unofficial fan site (no accounts, no backend)
-Contact: https://github.com/VeigaPunk/plazir-15-site/issues
-Preferred-Languages: en
-Canonical: https://veigapunk.github.io/.well-known/security.txt
-Policy: https://github.com/VeigaPunk/plazir-15-site#fan-disclaimer
-Expires: 2027-08-01T00:00:00.000Z

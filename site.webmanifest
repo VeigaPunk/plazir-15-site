@@ -1,20 +1,10 @@
 {
   "name": "Plazir-15 Fan Codex",
   "short_name": "Plazir-15",
-  "description": "Unofficial fan codex for the Outer Rim planet Plazir-15 — domed paradise, directed abundance.",
+  "description": "Unofficial fan codex for Plazir-15 — domed paradise of the Outer Rim.",
   "start_url": "./",
-  "scope": "./",
   "display": "standalone",
   "background_color": "#070d10",
   "theme_color": "#070d10",
-  "lang": "en",
-  "categories": ["entertainment", "education"],
-  "icons": [
-    {
-      "src": "assets/favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any"
-    }
-  ]
+  "lang": "en"
 }
