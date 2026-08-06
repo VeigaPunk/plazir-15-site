@@ -1,3 +1,26 @@
+/* Signature typeface: JetBrains Mono NL Nerd Font Mono */
+@font-face {
+  font-family: "JetBrainsMonoNL Nerd Font Mono";
+  src: url("assets/fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrainsMonoNL Nerd Font Mono";
+  src: url("assets/fonts/JetBrainsMonoNLNerdFontMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrainsMonoNL Nerd Font Mono";
+  src: url("assets/fonts/JetBrainsMonoNLNerdFontMono-Bold.woff2") format("woff2");
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Plazir-15 Fan Codex — domed utopia / directed abundance */
 
 :root {
@@ -22,9 +45,9 @@
   --radius-lg: 16px;
   --radius-xl: 24px;
   --shadow: 0 20px 50px color-mix(in oklab, #000 40%, transparent);
-  --font-display: "Cormorant Garamond", "Iowan Old Style", Palatino, Georgia, serif;
-  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-display: "JetBrainsMonoNL Nerd Font Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: "JetBrainsMonoNL Nerd Font Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-mono: "JetBrainsMonoNL Nerd Font Mono", "JetBrains Mono", ui-monospace, monospace;
   --header-h: 4rem;
   --max: 72rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
