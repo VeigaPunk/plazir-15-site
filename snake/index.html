@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Snake Autopilot — a persistent civic leisure game from the unofficial Plazir-15 Fan Codex." />
+  <meta name="theme-color" content="#070d10" />
+  <meta name="color-scheme" content="dark" />
+  <link rel="canonical" href="https://veigapunk.github.io/plazir-15-site/snake/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Plazir-15 Fan Codex" />
+  <meta property="og:title" content="Snake Autopilot — Plazir-15 Civic Arcade" />
+  <meta property="og:description" content="Play manually or watch a guarded Hamiltonian solver fill the board without collisions." />
+  <title>Snake Autopilot — Plazir-15 Civic Arcade</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="../assets/fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="snake.css" />
+</head>
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+
+  <header class="arcade-header">
+    <div class="arcade-max arcade-header-inner">
+      <a class="arcade-brand" href="../#leisure" aria-label="Return to the Plazir-15 Fan Codex">
+        <span class="arcade-brand-mark" aria-hidden="true">S</span>
+        <span><strong>Plazir-15</strong><small>Civic leisure deck · Game 01</small></span>
+      </a>
+      <div class="arcade-header-actions">
+        <span class="save-pill" id="save-status"><i aria-hidden="true"></i> Local save ready</span>
+        <a class="back-link" href="../#leisure">← Back to codex</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="arcade-main arcade-max" id="game">
+    <section class="arcade-intro" aria-labelledby="game-title">
+      <div>
+        <p class="eyebrow">Entertainment for humans</p>
+        <h1 id="game-title">Snake Autopilot</h1>
+        <p>Droids may carry the labor. Citizens get the spectacle. Take the controls—or watch a safety-locked solver occupy every cell.</p>
+      </div>
+      <div class="intro-proof">
+        <span>Solver</span>
+        <strong><i aria-hidden="true"></i> Hamiltonian verified</strong>
+      </div>
+    </section>
+
+    <section class="arcade-grid" aria-label="Snake game and controls">
+      <article class="board-panel">
+        <header class="board-head">
+          <div><span>Live board</span><strong id="status-label">Autopilot live</strong></div>
+          <div class="score-block"><span>Food</span><strong id="score">000</strong></div>
+        </header>
+
+        <div class="canvas-wrap" id="canvas-wrap">
+          <canvas class="arcade-canvas" id="game-canvas" tabindex="0" role="img" aria-label="Snake board. Use arrow keys or WASD in manual mode.">
+            Snake game board. Use the on-screen controls if canvas is unavailable.
+          </canvas>
+          <div class="board-overlay" id="board-overlay" hidden>
+            <span id="overlay-kicker">Holding</span>
+            <strong id="overlay-title">Run paused.</strong>
+            <p id="overlay-copy">The game clock and solver are frozen.</p>
+            <button type="button" id="overlay-action">Resume run</button>
+          </div>
+        </div>
+
+        <div class="board-progress">
+          <span>Board fill</span>
+          <strong id="fill-count">5 / 252</strong>
+          <div class="progress-track" aria-hidden="true"><i id="progress-bar"></i></div>
+          <span id="fill-percent">2.0%</span>
+        </div>
+      </article>
+
+      <aside class="control-stack" aria-label="Game controls and solver telemetry">
+        <section class="control-panel">
+          <div class="control-heading"><div><span>Control mode</span><strong>Who is driving?</strong></div><kbd>G</kbd></div>
+          <div class="segmented" aria-label="Control mode">
+            <button type="button" data-mode="manual"><strong>Manual</strong><span>Keys + touch</span></button>
+            <button type="button" data-mode="auto" class="active" aria-pressed="true"><strong>Autopilot</strong><span>Guaranteed run</span></button>
+          </div>
+        </section>
+
+        <section class="control-panel brain-panel">
+          <div class="brain-heading"><div class="orbit" aria-hidden="true"><i></i></div><div><span>Autopilot brain</span><strong>Guarded Hamiltonian</strong><p>Shortcut when safe. Follow the closed cycle when not.</p></div></div>
+          <dl class="telemetry">
+            <div><dt>Decision</dt><dd id="decision">Cycle lock acquired</dd></div>
+            <div><dt>Next move</dt><dd id="next-move">↑ Up</dd></div>
+            <div><dt>Safety gap</dt><dd id="safety-gap">247 cells</dd></div>
+            <div><dt>Route state</dt><dd id="route-state" class="safe">● Clear · safe</dd></div>
+          </dl>
+        </section>
+
+        <section class="control-panel">
+          <div class="control-heading"><div><span>Simulation rate</span><strong>Watch or warp</strong></div><small id="move-count">0 moves</small></div>
+          <div class="speed-row" aria-label="Autoplay speed">
+            <button type="button" data-speed="cruise"><strong>Cruise</strong><span>24/s</span></button>
+            <button type="button" data-speed="rapid"><strong>Rapid</strong><span>180/s</span></button>
+            <button type="button" data-speed="warp" class="active" aria-pressed="true"><strong>Warp</strong><span>720/s</span></button>
+          </div>
+        </section>
+
+        <section class="control-panel action-panel">
+          <div>
+            <span class="panel-label">Session</span>
+            <div class="action-row">
+              <button type="button" class="primary-action" id="pause-button">Pause <kbd>Space</kbd></button>
+              <button type="button" class="secondary-action" id="restart-button">New run <kbd>R</kbd></button>
+            </div>
+          </div>
+          <dl class="records">
+            <div><dt>Best fill</dt><dd id="best-fill">2.0%</dd></div>
+            <div><dt>Clears</dt><dd id="win-count">0</dd></div>
+          </dl>
+        </section>
+
+        <section class="control-panel manual-panel">
+          <div><span class="panel-label">Manual controls</span><p>Focus the board, then use arrows or WASD. Swipe also works.</p></div>
+          <div class="dpad" aria-label="Directional controls">
+            <button type="button" class="up" data-direction="up" aria-label="Move up">↑</button>
+            <button type="button" class="left" data-direction="left" aria-label="Move left">←</button>
+            <button type="button" class="center" id="dpad-pause" aria-label="Pause or resume">•</button>
+            <button type="button" class="right" data-direction="right" aria-label="Move right">→</button>
+            <button type="button" class="down" data-direction="down" aria-label="Move down">↓</button>
+          </div>
+        </section>
+      </aside>
+    </section>
+
+    <section class="proof-strip" aria-labelledby="proof-title">
+      <div><p class="eyebrow">Why it wins</p><h2 id="proof-title">A safety proof, rendered live.</h2></div>
+      <ol>
+        <li><span>01</span><div><strong>Map every cell</strong><p>One closed route touches all 252 spaces exactly once.</p></div></li>
+        <li><span>02</span><div><strong>Guard the tail</strong><p>The head advances without overtaking its free safety arc.</p></div></li>
+        <li><span>03</span><div><strong>Save the session</strong><p>Your game and records remain on this device between visits.</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="arcade-footer arcade-max">
+    <span>Plazir-15 Fan Codex · Non-commercial fan project</span>
+    <span>Progress is stored only in this browser.</span>
+  </footer>
+
+  <p class="sr-only" id="live-status" aria-live="polite"></p>
+  <script src="snake.js" defer></script>
+</body>
+</html>
