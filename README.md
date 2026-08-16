@@ -4,6 +4,8 @@ Unofficial non-commercial fan informational site for the Star Wars planet **Plaz
 
 **Live:** https://veigapunk.github.io/plazir-15-site/
 
+**Civic arcade:** https://veigapunk.github.io/plazir-15-site/snake/
+
 ## Theme
 
 A design homage to the planet’s bio-dome utopia — and a quiet parallel to **directed abundance**: droid (agent) labor underwriting leisure, with a pacifist pluralistic charter. Framed against acceleration vs deceleration without forcing the metaphor.
@@ -11,6 +13,8 @@ A design homage to the planet’s bio-dome utopia — and a quiet parallel to **
 ## Stack
 
 Static HTML, CSS, and JavaScript. Deployed via GitHub Pages from `main`.
+
+The civic arcade includes **Snake Autopilot**, a device-local persistent game with manual controls and a guaranteed Hamiltonian-cycle solver.
 
 ## Sources
 

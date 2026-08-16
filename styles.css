@@ -690,6 +690,196 @@ button:not(:disabled),
   flex: 1;
 }
 
+/* Civic leisure deck */
+.leisure-feature {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 900px) {
+  .leisure-feature {
+    grid-template-columns: minmax(0, 0.88fr) minmax(28rem, 1.12fr);
+  }
+}
+
+.leisure-copy {
+  padding: clamp(1.5rem, 4vw, 3.25rem);
+}
+
+.leisure-copy > h2 {
+  margin: 0.65rem 0 0;
+  max-width: 12ch;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+}
+
+.leisure-copy > .lede {
+  margin-top: 1.25rem;
+  max-width: 39rem;
+}
+
+.leisure-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.leisure-game-mark {
+  display: inline-grid;
+  width: 3rem;
+  height: 3rem;
+  flex: 0 0 3rem;
+  place-items: center;
+  border: 1px solid color-mix(in oklab, var(--leaf) 48%, transparent);
+  border-radius: 0.75rem;
+  background: color-mix(in oklab, var(--leaf) 12%, transparent);
+  color: var(--leaf);
+  font-family: var(--font-display);
+  font-weight: 700;
+  box-shadow: 0 0 2rem var(--leaf-glow);
+}
+
+.leisure-title-row h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+
+.leisure-title-row p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.leisure-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.25rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.leisure-specs li {
+  padding: 0.28rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--faint);
+  font-size: 0.72rem;
+}
+
+.leisure-preview {
+  display: flex;
+  min-height: 28rem;
+  flex-direction: column;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  border-top: 1px solid var(--border);
+  background:
+    linear-gradient(color-mix(in oklab, var(--teal) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--teal) 5%, transparent) 1px, transparent 1px),
+    radial-gradient(circle at 75% 20%, color-mix(in oklab, var(--leaf) 13%, transparent), transparent 38%),
+    var(--bg-deep);
+  background-size: 2rem 2rem, 2rem 2rem, auto, auto;
+}
+
+@media (min-width: 900px) {
+  .leisure-preview {
+    min-height: 100%;
+    border-top: 0;
+    border-left: 1px solid var(--border);
+  }
+}
+
+.leisure-preview-top,
+.leisure-preview-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--faint);
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+}
+
+.leisure-preview-live {
+  color: var(--leaf);
+}
+
+.leisure-preview-live::before {
+  content: "";
+  display: inline-block;
+  width: 0.38rem;
+  height: 0.38rem;
+  margin-right: 0.45rem;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0.8rem currentColor;
+}
+
+.leisure-preview-board {
+  position: relative;
+  width: 100%;
+  max-width: 34rem;
+  aspect-ratio: 18 / 12;
+  margin: auto;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(color-mix(in oklab, var(--chrome) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--chrome) 5%, transparent) 1px, transparent 1px),
+    #081115;
+  background-size: calc(100% / 18) calc(100% / 12);
+  box-shadow: inset 0 0 3rem #0008;
+}
+
+.leisure-preview-board span {
+  position: absolute;
+  left: calc(var(--x) * 100% / 18 + 0.35%);
+  top: calc(var(--y) * 100% / 12 + 0.5%);
+  width: calc(100% / 18 - 0.7%);
+  height: calc(100% / 12 - 1%);
+  border-radius: 27%;
+  background: var(--leaf);
+  box-shadow: 0 0 1rem var(--leaf-glow);
+}
+
+.leisure-preview-board .preview-head {
+  background: var(--chrome-bright);
+}
+
+.preview-food {
+  position: absolute;
+  left: 17%;
+  top: 66%;
+  width: 2.1%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #d9955a;
+  box-shadow: 0 0 1.25rem #d9955acc;
+}
+
+.leisure-preview-foot {
+  margin-top: 1rem;
+}
+
+.leisure-preview-foot strong {
+  margin-left: auto;
+  color: var(--chrome);
+  font-weight: 500;
+}
+
 .feature-img {
   margin-bottom: 2.5rem;
   border: 1px solid var(--border);
