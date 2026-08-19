@@ -778,6 +778,13 @@ button:not(:disabled),
   font-size: 0.72rem;
 }
 
+.leisure-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+}
+
 .leisure-preview {
   display: flex;
   min-height: 28rem;
