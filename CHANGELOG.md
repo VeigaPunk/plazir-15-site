@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-19 — Siduri at the Edge of the Sea
+
+- Added a dedicated page for Siduri’s counsel to Gilgamesh and its answer to the hero’s pursuit of immortality
+- Preserved the selected passage verbatim and the accompanying interpretation with typographical cleanup
+- Linked the page from the civic leisure section and sources; added it to the sitemap
+
 ## 2026-08-18 — 1337b contents guide
 
 - Added a dedicated Aristotle, *Politics* VIII.2–3 page covering the complete Bekker page 1337b
