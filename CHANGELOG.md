@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-18 — 1337b contents guide
+
+- Added a dedicated Aristotle, *Politics* VIII.2–3 page covering the complete Bekker page 1337b
+- Added a line-ranged contents outline for 1337b1–42: education and utility, liberal and banausic study, the four customary subjects, music, leisure, and play
+- Added outbound links to the W. D. Ross Greek edition in Perseus / Scaife and the public-domain Jowett translation
+- Linked the page from the civic leisure section and sources; added it to the sitemap
+
 ## 2026-08-16 — Civic arcade
 
 - Added Snake Autopilot under “Entertainment for Humans”
