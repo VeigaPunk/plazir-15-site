@@ -1,0 +1,26 @@
+@font-face { font-family: "JetBrainsMonoNL Nerd Font Mono"; src: url("../assets/fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "JetBrainsMonoNL Nerd Font Mono"; src: url("../assets/fonts/JetBrainsMonoNLNerdFontMono-Medium.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "JetBrainsMonoNL Nerd Font Mono"; src: url("../assets/fonts/JetBrainsMonoNLNerdFontMono-Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+:root { --bg:#070d10; --fg:#e8f0f2; --muted:#9aafb6; --faint:#6d838c; --leaf:#6baa88; --teal:#5aa8a0; --border:color-mix(in oklab,#e8f0f2 12%,transparent); --font:"JetBrainsMonoNL Nerd Font Mono", ui-monospace, monospace; }
+* { box-sizing: border-box; }
+html { color-scheme: dark; }
+body { margin:0; min-height:100dvh; background:linear-gradient(180deg,#05090b,#070d10 40%,#091317); color:var(--fg); font-family:var(--font); font-variant-ligatures:none; line-height:1.6; }
+a { color: inherit; }
+.text-max { width: min(100% - 2rem, 46rem); margin-inline: auto; }
+.text-header { border-bottom:1px solid var(--border); }
+.text-header .text-max { display:flex; justify-content:space-between; align-items:center; min-height:4rem; gap:1rem; }
+.text-brand { text-decoration:none; display:flex; flex-direction:column; }
+.text-brand small { color:var(--faint); font-size:0.65rem; letter-spacing:0.08em; text-transform:uppercase; }
+.back-link { color:var(--muted); font-size:0.8rem; text-decoration:none; }
+.eyebrow { margin:2rem 0 0; font-size:0.7rem; letter-spacing:0.16em; text-transform:uppercase; color:var(--muted); }
+h1 { margin:0.5rem 0 0; font-size:clamp(2rem,6vw,3.2rem); font-weight:500; letter-spacing:-0.04em; }
+.lede { margin:1rem 0; color:var(--muted); max-width:38rem; }
+.links { font-size:0.8rem; color:var(--teal); }
+.links a { color:var(--teal); }
+.picker { margin:2.5rem 0; padding-top:1.5rem; border-top:1px solid var(--border); }
+.picker h2 { margin:0 0 1rem; font-size:1.1rem; font-weight:500; }
+ol { list-style:none; padding:0; margin:0; display:grid; gap:1.25rem; }
+.rank { font-size:0.72rem; color:var(--leaf); letter-spacing:0.04em; }
+h3 { margin:0.25rem 0; font-size:1rem; font-weight:500; line-height:1.4; }
+.why { margin:0.35rem 0; color:var(--muted); font-size:0.88rem; }
+.meta { margin:0; font-size:0.68rem; color:var(--faint); }
