@@ -30,7 +30,13 @@ h1 { margin:0.5rem 0 0; font-size:clamp(2rem,6vw,3.2rem); font-weight:500; lette
 .links { font-size:0.8rem; color:var(--teal); }
 .links a { color:var(--teal); }
 .picker { margin:2.5rem 0; padding-top:1.5rem; border-top:1px solid var(--border); }
-.picker h2 { margin:0 0 1rem; font-size:1.1rem; font-weight:500; }
+.picker h2 { margin:0 0 0.35rem; font-size:1.1rem; font-weight:500; }
+.picker h2 a { text-decoration:none; }
+.picker h2 a:hover { text-decoration:underline; text-underline-offset:4px; }
+.board-link { margin:0 0 1rem; font-size:0.78rem; color:var(--teal); }
+.board-link a { color:var(--teal); }
+h3 a { text-decoration:none; }
+h3 a:hover { text-decoration:underline; text-underline-offset:3px; }
 ol { list-style:none; padding:0; margin:0; display:grid; gap:1.25rem; }
 .rank { font-size:0.72rem; color:var(--leaf); letter-spacing:0.04em; }
 h3 { margin:0.25rem 0; font-size:1rem; font-weight:500; line-height:1.4; }
