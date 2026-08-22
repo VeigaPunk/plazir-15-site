@@ -26,7 +26,7 @@ h1 { margin:0.5rem 0 0; font-size:clamp(2rem,6vw,3.2rem); font-weight:500; lette
   line-height: 1.5;
 }
 .poke strong { color: var(--fg); font-weight: 500; }
-.poke em { color: #d2a56f; font-style: normal; }
+.poke em, .clout { color: #d97757; font-style: normal; } /* Anthropic orange */
 .links { font-size:0.8rem; color:var(--teal); }
 .links a { color:var(--teal); }
 .picker { margin:2.5rem 0; padding-top:1.5rem; border-top:1px solid var(--border); }
