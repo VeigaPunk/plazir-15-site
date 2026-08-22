@@ -733,6 +733,10 @@ button:not(:disabled),
   border-top: 1px solid var(--border);
 }
 
+.leisure-title-row + .leisure-specs + .leisure-title-row {
+  margin-top: 0.5rem;
+}
+
 .leisure-game-mark {
   display: inline-grid;
   width: 3rem;

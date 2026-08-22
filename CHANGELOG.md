@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-22 — WIP #2 512QA outbound
+
+- Linked 512QA highlights from Entertainment for humans as WIP #2 (outbound Spark Pages board)
+- Snake Autopilot stays listed Game 01; Tetris Autopilot remains unlisted Game 02
+
 ## 2026-08-19 — Siduri at the Edge of the Sea
 
 - Added a dedicated page for Siduri’s counsel to Gilgamesh and its answer to the hero’s pursuit of immortality

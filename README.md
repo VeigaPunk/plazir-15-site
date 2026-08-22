@@ -6,6 +6,8 @@ Unofficial non-commercial fan informational site for the Star Wars planet **Plaz
 
 **Civic arcade:** https://veigapunk.github.io/plazir-15-site/snake/
 
+**512QA highlights:** https://veigapunk.github.io/xbrd-spark/highlights.html
+
 **Text note:** https://veigapunk.github.io/plazir-15-site/1337b/
 
 **Siduri passage:** https://veigapunk.github.io/plazir-15-site/siduri/
