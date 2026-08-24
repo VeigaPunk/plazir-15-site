@@ -1,6 +1,16 @@
 # Changelog
 
-## 2026-08-24 — Native Token Speedrun
+## 2026-08-24 — Speedrun outbound is ds4cc
+
+- Nav, leisure, paths, and README point at https://ds4cc.com/speedrun/
+- Do not copy the speedrun HTML into this repo as the outbound
+
+## 2026-08-24 — Token Speedrun outbound (ds4cc)
+
+- Nav, mobile, leisure #3, and paths / sekhmet-links point at https://ds4cc.com/speedrun/
+- No in-repo copy of the board HTML. No prompt pastes.
+
+2026-08-24 — Native Token Speedrun
 
 - Slim receipts board lives at `/speedrun/` on this site
 - Nav, mobile, and paths point at `speedrun/` instead of ds4cc.com
