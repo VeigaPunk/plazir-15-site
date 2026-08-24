@@ -37,8 +37,7 @@
   --leaf-dim: #3f6f58;
   --leaf-glow: color-mix(in oklab, #6baa88 28%, transparent);
   --teal: #5aa8a0;
-  --anthropic: #D97757;
-  --empire: var(--anthropic);
+  --anthropic-red: #C4442A;
   --border: color-mix(in oklab, #e8f0f2 12%, transparent);
   --border-strong: color-mix(in oklab, #e8f0f2 22%, transparent);
   --focus: #9ee0d4;
@@ -1038,21 +1037,7 @@ button:not(:disabled),
   background: var(--leaf-glow);
 }
 
-.path-card--yoke,
-.path-card--empire {
-  border-color: color-mix(in oklab, var(--empire) 42%, transparent);
-  background: color-mix(in oklab, var(--empire) 10%, transparent);
-}
-.path-card--yoke .eyebrow,
-.path-card--yoke h3,
-.path-card--empire .eyebrow,
-.path-card--empire h3 {
-  color: var(--empire);
-}
-#paths .empire-fall {
-  color: var(--empire);
-}
-
+#paths .empire-fall { color: var(--anthropic-red); }
 
 .path-card h3 {
   margin: 0.75rem 0 0;
