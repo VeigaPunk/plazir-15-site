@@ -12,6 +12,8 @@ Unofficial non-commercial fan informational site for the Star Wars planet **Plaz
 
 **Siduri passage:** https://veigapunk.github.io/plazir-15-site/siduri/
 
+**Token Speedrun:** https://ds4cc.com/speedrun/ (public paid-OAuth receipts board — not a grant; the work speaks)
+
 ## Theme
 
 A design homage to the planet’s bio-dome utopia — and a quiet parallel to **directed abundance**: droid (agent) labor underwriting leisure, with a pacifist pluralistic charter. Framed against acceleration vs deceleration without forcing the metaphor.

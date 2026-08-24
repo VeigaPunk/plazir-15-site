@@ -1,6 +1,11 @@
 # Changelog
 
-## 2026-08-22 — WIP #2 512QA outbound
+## 2026-08-24 — Token Speedrun outbound
+
+- Linked Token Speedrun from primary nav, mobile nav, and the paths / sekhmet-links line to https://ds4cc.com/speedrun/
+- Public paid-OAuth receipts board (not a grant). Work speaks. No input pastes. No in-repo copy of the board.
+
+2026-08-22 — WIP #2 512QA outbound
 
 - Linked 512QA highlights from Entertainment for humans as WIP #2 (outbound Spark Pages board)
 - Snake Autopilot stays listed Game 01; Tetris Autopilot remains unlisted Game 02
