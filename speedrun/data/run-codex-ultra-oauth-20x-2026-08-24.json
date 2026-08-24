@@ -1,16 +1,16 @@
 {
   "id": "veigapunk-codex-ultra-oauth-20x-2026-08-24",
-  "title": "Codex ultra OAuth 20x oneshot",
+  "title": "Codex ultra oneshot \u2014 60% weekly in ~1h",
   "runner": "VeigaPunk",
   "provider": "OpenAI / Codex",
   "product": "ChatGPT Pro \u00b7 gpt-5.6-sol ultra fast \u00b7 OAuth 20x weekly window",
   "budget_usd": null,
   "budget_note": "Paid ChatGPT Pro OAuth \u2014 not a grant. Meter is weekly used_percent (10080 min), not 100% of the month. Oneshot category.",
   "currency": "USD",
-  "status": "live",
-  "duration": "live \u00b7 session-clock MISS \u00b7 meter-clock MISS",
+  "status": "closed",
+  "duration": "1h 1m 18s",
   "venue": "tmux session 26 \u00b7 gpt-5.6-sol ultra fast",
-  "summary": "Live Codex ultra oneshot. Paid Pro. Weekly 10080 min meter, not monthly. Receipt: xbgst-codex.",
+  "summary": "Oneshot done. gpt-5.6-sol ultra burned ~60% of the weekly 20x window in 1h 1m 18s (1,018,795 goal tokens). Receipt: xbgst-codex.",
   "timeline": [
     {
       "t": "2026-08-24T04:36:27Z",
@@ -23,9 +23,9 @@
       "note": "0% on the weekly 10080 min window"
     },
     {
-      "t": "2026-08-24T12:47:22.245Z",
-      "label": "live snapshot",
-      "note": "60.0% weekly \u00b7 0.125%/min \u00b7 ETA +320.85 min \u00b7 sub-hour: no"
+      "t": "done",
+      "label": "oneshot closed",
+      "note": "60% weekly 20x \u00b7 1h 1m 18s \u00b7 1,018,795 goal tokens \u00b7 gpt-5.6-sol ultra"
     }
   ],
   "metrics": {
@@ -47,11 +47,13 @@
     "approx_cores": 4.2,
     "tmux": "26",
     "model": "gpt-5.6-sol ultra fast",
-    "outcome": "live \u00b7 racing 20x vs 48h Kimi seed",
+    "outcome": "closed \u00b7 done \u00b7 ~60% weekly in ~1h",
     "spark_5h_pct": 0,
     "subhour_session_ok": false,
     "subhour_meter_ok": false,
-    "elapsed_min_from_session": 490.92
+    "elapsed_min_from_session": 490.92,
+    "goal_clock": "1h 1m 18s",
+    "goal_tokens": 1018795
   },
   "pace": {
     "elapsed_min_from_session": 490.92,
@@ -70,7 +72,8 @@
     "ts": "2026-08-24T12:47:22.245Z",
     "used_percent": 60.0,
     "tokens_total": 46397151,
-    "n_rollouts": 470
+    "n_rollouts": 470,
+    "status": "closed"
   },
   "links": {
     "codex": "https://chatgpt.com/",

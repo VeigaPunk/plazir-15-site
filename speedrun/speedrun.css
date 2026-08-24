@@ -61,6 +61,7 @@ h1 { margin: 0.4rem 0 0; font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 500
 .chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.85rem; }
 .chip { font-size: 0.66rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.18rem 0.5rem; border: 1px solid var(--border); color: var(--muted); }
 .chip-live { background: var(--leaf); color: var(--bg); border-color: var(--leaf); }
+.chip-closed { color: var(--faint); border-color: var(--border); }
 
 .meter { border: 1px solid var(--border); background: var(--bg-deep); padding: 0.65rem 0.8rem; margin-bottom: 0.7rem; }
 .meter-bar { height: 10px; background: #152228; overflow: hidden; margin-top: 0.4rem; }

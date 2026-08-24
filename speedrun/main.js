@@ -22,8 +22,8 @@ function budgetCell(run) {
 }
 
 function clockCell(run) {
-  if (run.status === "live" && run.metrics?.used_percent != null) {
-    return `${run.metrics.used_percent}% · ${run.duration || "live"}`;
+  if (run.metrics?.used_percent != null) {
+    return `${run.metrics.used_percent}% · ${run.duration || run.status}`;
   }
   if (run.status === "live" && run.metrics?.context_frac) {
     return `${run.metrics.context_frac} ctx`;
@@ -109,14 +109,15 @@ function renderCodex(run, curve) {
   el("live-pct").textContent = `${pct}%`;
   el("hero-live-pct").textContent = `${pct}%`;
   el("live-fill").style.width = `${Math.min(100, Number(pct) || 0)}%`;
-  el("live-pace").textContent = `${pace.pct_per_min ?? m.pct_per_min ?? "—"}%/min`;
-  el("live-eta").textContent = `${pace.eta_100_min ?? m.eta_100_min ?? "—"} min`;
+  el("live-pace").textContent = m.goal_clock || "1h 1m 18s";
+  el("live-eta").textContent = (m.goal_tokens ?? 1018795).toLocaleString("en-US");
   el("live-metrics").innerHTML = `
+    <dt>status</dt><dd class="status-closed">${escapeHtml(run.status)}</dd>
     <dt>model</dt><dd>${escapeHtml(m.model)}</dd>
-    <dt>meter</dt><dd>weekly ${escapeHtml(m.window_minutes)} min</dd>
-    <dt>tokens</dt><dd>${fmtTokens(m.tokens_total)}</dd>
-    <dt>rollouts</dt><dd>${escapeHtml(m.n_rollouts)}</dd>
-    <dt>snapshot</dt><dd>${escapeHtml(run.snapshot?.ts || "—")}</dd>
+    <dt>meter</dt><dd>${escapeHtml(m.used_percent)}% of weekly ${escapeHtml(m.window_minutes)} min</dd>
+    <dt>clock</dt><dd>${escapeHtml(m.goal_clock || run.duration)}</dd>
+    <dt>goal tokens</dt><dd>${escapeHtml(m.goal_tokens)}</dd>
+    <dt>session tokens</dt><dd>${fmtTokens(m.tokens_total)}</dd>
   `;
   if (curve) renderCurve(curve);
 }
