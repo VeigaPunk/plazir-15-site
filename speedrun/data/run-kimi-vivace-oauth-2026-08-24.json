@@ -1,0 +1,75 @@
+{
+  "id": "veigapunk-kimi-vivace-oauth-2026-08-24",
+  "title": "Kimi OAuth vivace \u2014 r14-2 + auto FSD cron",
+  "runner": "VeigaPunk",
+  "provider": "Moonshot / Kimi",
+  "product": "kimi-code/k3 OAuth main + K2.7 code swarm",
+  "budget_usd": null,
+  "budget_note": "Paid Kimi/Moonshot OAuth \u2014 not a grant. Not the $200 closed seed. Frontier meter: 5h window at 100% while weekly sat ~25\u201327% \u21d2 5h cap \u2248 20% of weekly.",
+  "currency": "USD",
+  "status": "live",
+  "duration": "live",
+  "venue": "tmux session 2 \u00b7 kimi-code pid 44796",
+  "summary": "Live Kimi OAuth. Cron 01M0S354HTM81Q9NCNM36MSQAD at 11,41. OAuth 403 pause. 5h 100% at weekly ~27%.",
+  "timeline": [
+    {
+      "t": "session",
+      "label": "tmux 2",
+      "note": "kimi-code pid 44796 \u00b7 Kimi K2.7 Code HighSpeed footer"
+    },
+    {
+      "t": "cron",
+      "label": "auto FSD cron LANDED",
+      "note": "job 01M0S354HTM81Q9NCNM36MSQAD \u00b7 11,41 * * * * \u00b7 operator was wrong to say it did not"
+    },
+    {
+      "t": "r14-2",
+      "label": "xbgst-kimi r14-2",
+      "note": "CreateGoal\u00d73 \u00b7 AgentSwarm \u00b7 FRAMEWORK.md \u00b7 r13 PASS \u00b7 r14 \u00b7 ground work for Codex oneshot"
+    },
+    {
+      "t": "pause",
+      "label": "OAuth 403",
+      "note": "goal paused \u00b7 5h 100% \u00b7 weekly ~27% \u00b7 first API auto-swap failed \u00b7 cron retries \u00b7 operator not touching CLI"
+    }
+  ],
+  "metrics": {
+    "mode": "agent / kimi-code OAuth",
+    "parallelization": "K2.7 code swarm",
+    "context_pct": 24,
+    "context_frac": "242k/1M",
+    "turns": 3,
+    "model": "K3 thinking: high  ~/Projects/xbg\u2026",
+    "tmux": "2",
+    "pid": 44796,
+    "outcome": "live \u00b7 cron landed \u00b7 OAuth 403 pause",
+    "weekly_pct": 27,
+    "fiveh_pct": 100,
+    "fiveh_is_about_pct_of_weekly": 27,
+    "oauth_403": true,
+    "cron_job": "01M0S354HTM81Q9NCNM36MSQAD",
+    "cron_schedule": "11,41 * * * *",
+    "cron_landed": true
+  },
+  "snapshot": {
+    "ts": "2026-08-24T06:47:40.281Z",
+    "alive": true,
+    "weekly_pct": 27,
+    "fiveh_pct": 100,
+    "fiveh_is_about_pct_of_weekly": 27
+  },
+  "links": {
+    "kimi": "https://www.kimi.com/",
+    "board": "./",
+    "charter": "https://veigapunk.github.io/plazir-15-site/#charter"
+  },
+  "tags": [
+    "kimi",
+    "oauth",
+    "vivace",
+    "live",
+    "r14-2"
+  ],
+  "paid": true,
+  "not_a_grant": true
+}

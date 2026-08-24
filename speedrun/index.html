@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Token Speedrun | Plazir-15</title>
+  <meta name="description" content="Receipts board: $200 Kimi seed, live Kimi OAuth, live Codex ultra oneshot." />
+  <meta name="theme-color" content="#070d10" />
+  <link rel="canonical" href="https://veigapunk.github.io/plazir-15-site/speedrun/" />
+  <link rel="stylesheet" href="speedrun.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <a class="back" href="../">← Plazir-15</a>
+    <p class="eyebrow">token speedrun</p>
+    <nav class="nav">
+      <a href="#live-codex">Codex</a>
+      <a href="#run-kimi">Kimi</a>
+      <a href="#run-200">$200</a>
+      <a href="#board">Board</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <h1>Receipts.</h1>
+      <p class="lede">Three paid burns. Closed $200 Kimi seed, live Kimi OAuth, live Codex ultra oneshot on a weekly 10080 min meter.</p>
+      <div class="hero-stats">
+        <div class="stat"><span class="n" id="hero-n-runs">3</span><span class="l">runs</span></div>
+        <div class="stat"><span class="n">48h</span><span class="l">seed clock</span></div>
+        <div class="stat"><span class="n" id="hero-live-pct">—</span><span class="l">Codex weekly</span></div>
+      </div>
+    </section>
+
+    <section class="panel live" id="live-codex">
+      <p class="eyebrow">live · oneshot · weekly 10080</p>
+      <h2 id="live-title">Codex — loading…</h2>
+      <p class="summary" id="live-summary"></p>
+      <div class="meter">
+        <div class="pace-row"><strong id="live-pct">—</strong> weekly 20x</div>
+        <div class="meter-bar"><div class="meter-fill" id="live-fill"></div></div>
+      </div>
+      <p class="pace-row">pace <strong id="live-pace">—</strong> · ETA <strong id="live-eta">—</strong> · sub-hour <strong id="live-record">—</strong></p>
+      <div class="curve-wrap">
+        <svg id="curve" viewBox="0 0 640 220" role="img" aria-label="Codex percent versus minutes">
+          <path class="curve-fill" id="curve-fill" d=""></path>
+          <path class="curve-line" id="curve-line" d=""></path>
+          <circle class="curve-dot" id="curve-dot" r="4" cx="-10" cy="-10"></circle>
+        </svg>
+      </div>
+      <dl class="metrics" id="live-metrics"></dl>
+      <p class="repo-out">
+        <a class="repo-btn" href="https://github.com/VeigaPunk/xbgst-codex" rel="noopener">xbgst-codex</a>
+      </p>
+    </section>
+
+    <section class="panel live" id="run-kimi">
+      <p class="eyebrow">live · kimi oauth</p>
+      <h2 id="kimi-title">Loading…</h2>
+      <p class="summary" id="kimi-summary"></p>
+      <ol class="timeline" id="kimi-timeline"></ol>
+      <dl class="metrics" id="kimi-metrics"></dl>
+    </section>
+
+    <section class="panel" id="run-200">
+      <p class="eyebrow">seed · closed · paid $200</p>
+      <h2 id="run-title">Loading…</h2>
+      <p class="summary" id="run-summary"></p>
+      <ol class="timeline" id="run-timeline"></ol>
+      <dl class="metrics" id="run-metrics"></dl>
+    </section>
+
+    <section class="panel" id="board">
+      <p class="eyebrow">board</p>
+      <h2>Runs</h2>
+      <div class="board-wrap">
+        <table class="board">
+          <thead>
+            <tr><th>#</th><th>Runner</th><th>Provider</th><th>Budget</th><th>Clock</th><th>Status</th></tr>
+          </thead>
+          <tbody id="board-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <script src="speedrun.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "board_name": "Token Speedrun",
+  "featured_run_id": "veigapunk-kimi-200-usd-48h",
+  "live_strip_run_id": "veigapunk-codex-ultra-oauth-20x-2026-08-24",
+  "runs": [
+    "data/run-200usd.json",
+    "data/run-kimi-vivace-oauth-2026-08-24.json",
+    "data/run-codex-ultra-oauth-20x-2026-08-24.json"
+  ]
+}

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-24 — Native Token Speedrun
+
+- Slim receipts board lives at `/speedrun/` on this site
+- Nav, mobile, and paths point at `speedrun/` instead of ds4cc.com
+
 ## 2026-08-24 — Token Speedrun outbound
 
 - Linked Token Speedrun from primary nav, mobile nav, and the paths / sekhmet-links line to https://ds4cc.com/speedrun/
