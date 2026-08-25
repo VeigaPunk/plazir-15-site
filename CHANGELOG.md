@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-25 — Slopcast leisure #4
+
+- Linked AI-generated podcasts (Slopcast / VGPNKHOLDINGS LLC) from Entertainment for humans as leisure #4
+- Spotify: https://open.spotify.com/show/5AftGupUTbPW4Vxy9iXZPS
+
 ## 2026-08-24 — Speedrun outbound is ds4cc
 
 - Nav, leisure, paths, and README point at https://ds4cc.com/speedrun/
