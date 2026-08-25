@@ -37,7 +37,7 @@
   --leaf-dim: #3f6f58;
   --leaf-glow: color-mix(in oklab, #6baa88 28%, transparent);
   --teal: #5aa8a0;
-  --anthropic-red: #C4442A;
+  --ember: #e85e44;
   --border: color-mix(in oklab, #e8f0f2 12%, transparent);
   --border-strong: color-mix(in oklab, #e8f0f2 22%, transparent);
   --focus: #9ee0d4;
@@ -1037,7 +1037,7 @@ button:not(:disabled),
   background: var(--leaf-glow);
 }
 
-#paths .empire-fall { color: var(--anthropic-red); }
+#paths .empire-fall { color: var(--ember); }
 
 .path-card h3 {
   margin: 0.75rem 0 0;
@@ -1448,45 +1448,32 @@ svg {
   color: var(--chrome);
 }
 
-.sekhmet-echo {
-  max-width: 40rem;
-  margin: 1.5rem auto 0;
-  text-align: center;
-  font-size: 0.9rem;
+.mt-12 { margin-top: 3rem; }
+
+.text-faint { color: var(--faint); }
+
+.text-sm { font-size: 0.9rem; }
+
+.text-chrome { color: var(--chrome); }
+
+.h3-display {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.h3-display--spaced {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.panel-narrow { max-width: 48rem; }
+
+.text-muted-spaced {
+  margin: 1rem 0 0;
+  color: var(--muted);
   line-height: 1.7;
-  color: var(--faint);
-}
-
-.sekhmet-echo a {
-  color: var(--muted);
-  text-decoration: underline;
-  text-decoration-color: var(--border);
-  text-underline-offset: 4px;
-  transition: color 0.15s, text-decoration-color 0.15s;
-}
-
-.sekhmet-echo a:hover {
-  color: var(--leaf);
-  text-decoration-color: color-mix(in oklab, var(--leaf) 50%, transparent);
-}
-
-.sekhmet-links {
-  max-width: 40rem;
-  margin: 0.85rem auto 0;
-  text-align: center;
-  font-size: 0.85rem;
-  letter-spacing: 0.02em;
-  color: var(--faint);
-}
-
-.sekhmet-links a {
-  color: var(--muted);
-  text-decoration: none;
-  border-bottom: 1px solid var(--border);
-  transition: color 0.15s, border-color 0.15s;
-}
-
-.sekhmet-links a:hover {
-  color: var(--leaf);
-  border-bottom-color: color-mix(in oklab, var(--leaf) 50%, transparent);
 }

@@ -107,7 +107,8 @@ function renderCodex(run, curve) {
   el("live-title").textContent = `${run.runner} — ${run.title}`;
   el("live-summary").textContent = run.summary;
   el("live-pct").textContent = `${pct}%`;
-  el("hero-live-pct").textContent = `${pct}%`;
+  const heroPct = el("hero-live-pct");
+  if (heroPct) heroPct.textContent = `${pct}%`;
   el("live-fill").style.width = `${Math.min(100, Number(pct) || 0)}%`;
   el("live-pace").textContent = m.goal_clock || "1h 1m 18s";
   el("live-eta").textContent = (m.goal_tokens ?? 1018795).toLocaleString("en-US");
@@ -123,7 +124,8 @@ function renderCodex(run, curve) {
 }
 
 function renderBoard(runs) {
-  el("hero-n-runs").textContent = String(runs.length);
+  const heroN = el("hero-n-runs");
+  if (heroN) heroN.textContent = String(runs.length);
   el("board-body").innerHTML = runs.map((run, i) => {
     const m = run.metrics || {};
     const st = run.status === "live" ? "status-live" : "status-closed";

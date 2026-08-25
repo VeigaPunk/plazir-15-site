@@ -33,4 +33,7 @@ function draw(){ctx.fillStyle='#061014';ctx.fillRect(0,0,300,600);for(let r=0;r<
 function loop(){if(!paused&&mode==='auto')aiMove();draw();document.getElementById('lines').textContent=lines;document.getElementById('status').textContent=mode;requestAnimationFrame(loop);}
 spawn();loop();
 document.getElementById('mode').onclick=()=>mode=mode==='auto'?'manual':'auto';
+const pauseBtn=document.getElementById('pause');
+pauseBtn.onclick=()=>{paused=!paused;pauseBtn.textContent=paused?'Resume':'Pause';};
+document.addEventListener('keydown',e=>{if(e.key==='p')pauseBtn.onclick();});
 document.addEventListener('keydown',e=>{if(e.key==='g')mode=mode==='auto'?'manual':'auto';if(mode==='manual'){if(e.key==='ArrowLeft'&&!collide(x-1,y))x--;if(e.key==='ArrowRight'&&!collide(x+1,y))x++;if(e.key==='ArrowDown'&&!collide(x,y+1))y++;if(e.key===' ')hardDrop();}});

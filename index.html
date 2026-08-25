@@ -24,6 +24,15 @@
   <link rel="preload" href="assets/fonts/JetBrainsMonoNLNerdFontMono-Medium.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css" />
   <link rel="manifest" href="site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Plazir-15 Fan Codex",
+    "url": "https://veigapunk.github.io/plazir-15-site/",
+    "description": "Unofficial fan codex for Plazir-15 from The Mandalorian."
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -48,7 +57,6 @@
         <a href="#charter">Charter</a>
         <a href="#ballot">Ballot</a>
         <a href="#sources">Sources</a>
-        <a href="https://ds4cc.com/speedrun/" rel="noopener">Token Speedrun</a>
       </nav>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">
@@ -61,7 +69,6 @@
         <li><a href="#charter">Charter</a></li>
         <li><a href="#ballot">Ballot</a></li>
         <li><a href="#sources">Sources</a></li>
-        <li><a href="https://ds4cc.com/speedrun/" rel="noopener">Token Speedrun</a></li>
       </ul>
     </nav>
   </header>
@@ -173,7 +180,7 @@
             <p>Known planetary approach pad, paired with the Royal Hall sub-dome — ceremonial heart of the co-rulers’ court within the larger dome complex.</p>
           </article>
         </div>
-        <div style="margin-top:3rem">
+        <div class="mt-12">
           <h3 class="species-heading">Species on-world (seen)</h3>
           <p class="species-lede">A pluralistic citizenry matching the charter’s ideals — list drawn from on-screen appearances.</p>
           <ul class="species-chips" aria-label="Species observed on Plazir-15">
@@ -291,21 +298,19 @@
         </header>
         <div class="paths-grid">
           <article class="path-card">
-            <p class="eyebrow" style="color:var(--faint)">The yoke path</p>
+            <p class="eyebrow text-faint">The yoke path</p>
             <h3 class="empire-fall">Empire & extractive accel</h3>
             <p>Under the Galactic Empire, machine power and order served domination. Acceleration without a charter — more capacity pointed at control — is what Plazir-15 had to survive. Deceleration-as-fear is the mirror image: freeze the tools because they once hurt, and accept permanent scarcity as the moral price.</p>
-            <p style="font-size:0.9rem;color:var(--faint)">In both frames, ordinary people do not get the surplus.</p>
+            <p class="text-sm text-faint">In both frames, ordinary people do not get the surplus.</p>
           </article>
           <article class="path-card path-card--charter">
             <p class="eyebrow">The charter path</p>
             <h3>Directed abundance</h3>
-            <p>Post-Empire Plazir does not smash the droids. It rehabilitates them, binds power with elective monarchy and direct ballots, and aims the labor pool at leisure and pluralism. That is acceleration with a destination: <em style="color:var(--chrome)">more capable agents, governed so the wealth compounds for citizens rather than warlords.</em></p>
-            <p style="font-size:0.9rem">The homage lands here — a sketch of what agents and AI could buy a society that chooses charter over yoke.</p>
+            <p>Post-Empire Plazir does not smash the droids. It rehabilitates them, binds power with elective monarchy and direct ballots, and aims the labor pool at leisure and pluralism. That is acceleration with a destination: <em class="text-chrome">more capable agents, governed so the wealth compounds for citizens rather than warlords.</em></p>
+            <p class="text-sm">The homage lands here — a sketch of what agents and AI could buy a society that chooses charter over yoke.</p>
           </article>
         </div>
         <p class="paths-closer">Accel without stewardship is <span class="empire-fall">the Empire</span>. Decel without imagination is permanent scarcity. Plazir-15 is the third image: <span>build the dome, free the people, keep the charter.</span> <em class="this-is-the-way">This is the way.</em></p>
-        <p class="sekhmet-echo">The same force that can scorch can also mend — a dual nature older than the Outer Rim. Lioness of war and healing: do not smash the power — aim it.</p>
-        <p class="sekhmet-links"><a href="https://veigapunk.github.io/sekhmet-site/">Sekhmet</a> · <a href="https://github.com/VeigaPunk/plazir-15-site/releases/download/sekhmet-research/Sekhmet_Deep_Research.pdf">Research</a> · <a href="https://ds4cc.com/speedrun/" rel="noopener">Token Speedrun</a></p>
       </div>
     </section>
 
@@ -330,7 +335,7 @@
         </div>
         <div class="split-2">
           <div>
-            <h3 style="margin:0;font-family:var(--font-display);font-size:1.5rem;font-weight:600">How power works</h3>
+            <h3 class="h3-display">How power works</h3>
             <ul class="feature-list">
               <li><span><strong>Elective monarchy + direct democracy.</strong> Citizens vote through automated systems rather than distant legislatures alone.</span></li>
               <li><span><strong>Shared co-rule.</strong> The dual office binds noble continuity to a former Imperial who turned toward the charter.</span></li>
@@ -405,22 +410,22 @@
           <fieldset>
             <legend id="ballot-prompt">Should Landing Field Three expand visitor hospitality capacity for the next festival cycle?</legend>
             <div class="ballot-options" role="radiogroup" aria-label="Ballot choices">
-              <label class="ballot-option">
-                <input type="radio" name="vote" value="aye" />
+              <label class="ballot-option" for="vote-aye">
+                <input type="radio" name="vote" value="aye" id="vote-aye" />
                 <span>
                   <span class="ballot-option-title">Aye</span>
                   <span class="ballot-option-desc" id="ballot-aye-desc">Authorize measured expansion under charter safety review</span>
                 </span>
               </label>
-              <label class="ballot-option">
-                <input type="radio" name="vote" value="nay" />
+              <label class="ballot-option" for="vote-nay">
+                <input type="radio" name="vote" value="nay" id="vote-nay" />
                 <span>
                   <span class="ballot-option-title">Nay</span>
                   <span class="ballot-option-desc" id="ballot-nay-desc">Retain current capacity; prefer hyperloop redistribution</span>
                 </span>
               </label>
-              <label class="ballot-option">
-                <input type="radio" name="vote" value="abstain" />
+              <label class="ballot-option" for="vote-abstain">
+                <input type="radio" name="vote" value="abstain" id="vote-abstain" />
                 <span>
                   <span class="ballot-option-title">Abstain</span>
                   <span class="ballot-option-desc">Record presence without preference</span>
@@ -450,7 +455,6 @@
           <div class="panel glass"><dt>Charter</dt><dd>Pacifistic and pluralistic founding rules; independent of the New Republic (off NR registry) with restricted defense.</dd></div>
           <div class="panel glass"><dt>Hyperloop</dt><dd>Surface transit linking landing pads and sites outside the metro domes across grasslands and river country.</dd></div>
           <div class="panel glass"><dt>Royal Hall sub-dome</dt><dd>Ceremonial court space within the dome complex, associated with the co-rulers’ hospitality.</dd></div>
-          <div class="panel glass"><dt>Sekhmet (echo)</dt><dd>Egyptian lioness of destruction and healing — the dual force that can scorch or mend. Invoked as a quiet parallel to machine power under charter. <a href="https://veigapunk.github.io/sekhmet-site/">Site</a> · <a href="https://github.com/VeigaPunk/plazir-15-site/releases/download/sekhmet-research/Sekhmet_Deep_Research.pdf">Research</a></dd></div>
         </dl>
       </div>
     </section>
@@ -462,10 +466,10 @@
           <h2 id="app-heading">Appearances</h2>
           <p class="lede">Plazir-15 enters live-action canon in Season 3 of The Mandalorian.</p>
         </header>
-        <article class="panel glass" style="max-width:48rem">
+        <article class="panel glass panel-narrow">
           <p class="eyebrow">First appearance</p>
-          <h3 style="margin:0.5rem 0 0;font-family:var(--font-display);font-size:1.75rem;font-weight:600">Star Wars: The Mandalorian — Chapter 22: Guns for Hire</h3>
-          <p style="margin:1rem 0 0;color:var(--muted);line-height:1.7">Season 3 · series chapter 22. Official episode title is <em>Guns for Hire</em> (not “Gunslingers”). Din Djarin and Bo-Katan Kryze visit the domed world; the Duchess welcomes them to the “domed paradise.” The co-rulers recruit help against sabotage of the droid labor base that underwrites the planet’s leisure society.</p>
+          <h3 class="h3-display--spaced">Star Wars: The Mandalorian — Chapter 22: Guns for Hire</h3>
+          <p class="text-muted-spaced">Season 3 · series chapter 22. Official episode title is <em>Guns for Hire</em> (not “Gunslingers”). Din Djarin and Bo-Katan Kryze visit the domed world; the Duchess welcomes them to the “domed paradise.” The co-rulers recruit help against sabotage of the droid labor base that underwrites the planet’s leisure society.</p>
         </article>
       </div>
     </section>
