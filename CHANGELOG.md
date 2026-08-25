@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-25 — Slopcast leisure deck cards
+
+- Leisure deck is a 4-card grid; each card mirrors its element (snake board, 512QA ranks, speedrun meter, Slopcast studio)
+- Slopcast card + studio panel borrow cover language: neon nameplates, cyan waveforms, matte black, LEX accent
+- Cover art at `images/slopcast-cover.jpg`; Spotify show https://open.spotify.com/show/5AftGupUTbPW4Vxy9iXZPS
+
 ## 2026-08-25 — Slopcast leisure #4
 
 - Linked AI-generated podcasts (Slopcast / VGPNKHOLDINGS LLC) from Entertainment for humans as leisure #4
