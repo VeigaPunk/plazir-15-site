@@ -8,6 +8,9 @@ body { margin:0; min-height:100dvh; background:linear-gradient(180deg,#05090b,#0
 a { color: inherit; }
 .text-max { width: min(100% - 2rem, 46rem); margin-inline: auto; }
 
+.site-foot { border-top: 1px solid var(--border); padding: 1.25rem 1rem 2rem; color: var(--faint); font-size: 0.75rem; text-align: center; }
+.site-foot a { color: var(--muted); }
+
 .skip-link {
   position: absolute;
   left: -9999px;

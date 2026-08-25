@@ -220,8 +220,8 @@ kbd { padding: 0.18rem 0.38rem; border: 1px solid var(--line); border-radius: 0.
 .records dt { color: var(--faint); font-size: 0.52rem; text-transform: uppercase; }
 .records dd { margin: 0.2rem 0 0; color: var(--chrome); font-size: 0.67rem; }
 .manual-panel p { max-width: 13rem; margin: 0.3rem 0 0; color: var(--faint); font-size: 0.58rem; line-height: 1.45; }
-.dpad { display: grid; flex: 0 0 auto; gap: 0.18rem; grid-template-columns: repeat(3, 2.35rem); grid-template-rows: repeat(3, 2.35rem); }
-.dpad button { min-width: 2.35rem; min-height: 2.35rem; border: 1px solid var(--line); border-radius: 0.5rem; background: rgba(255, 255, 255, 0.04); }
+.dpad { display: grid; flex: 0 0 auto; gap: 0.18rem; grid-template-columns: repeat(3, 2.75rem); grid-template-rows: repeat(3, 2.75rem); }
+.dpad button { min-width: 2.75rem; min-height: 2.75rem; border: 1px solid var(--line); border-radius: 0.5rem; background: rgba(255, 255, 255, 0.04); }
 .dpad button:hover { border-color: rgba(107, 170, 136, 0.35); background: rgba(107, 170, 136, 0.1); }
 .dpad .up { grid-column: 2; grid-row: 1; }
 .dpad .left { grid-column: 1; grid-row: 2; }

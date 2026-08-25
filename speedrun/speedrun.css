@@ -43,12 +43,12 @@ a { color: var(--teal); text-underline-offset: 3px; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover { color: var(--fg); }
 
-main { padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 4rem; width: min(100%, 52rem); }
+main { padding: 1.75rem clamp(1rem, 4vw, 2.5rem) 4rem; width: min(100%, 52rem); margin-inline: auto; }
 .eyebrow { font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
 h1 { margin: 0.4rem 0 0; font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 500; letter-spacing: -0.03em; }
 .lede { margin: 0.7rem 0 0; color: var(--muted); max-width: 40rem; }
 .hero { margin-bottom: 2rem; }
-.hero-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.7rem; margin-top: 1.25rem; }
+.hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr)); gap: 0.7rem; margin-top: 1.25rem; }
 .stat { border: 1px solid var(--border); background: var(--panel); padding: 0.85rem 1rem; }
 .stat .n { display: block; color: var(--leaf); font-size: 1.4rem; font-weight: 600; }
 .stat .l { font-size: 0.75rem; color: var(--muted); }
@@ -91,12 +91,15 @@ h1 { margin: 0.4rem 0 0; font-size: clamp(1.6rem, 5vw, 2.4rem); font-weight: 500
   background: var(--leaf); color: var(--bg); text-decoration: none;
   font-weight: 700; padding: 0.6rem 1rem;
 }
+.repo-btn-static { background: var(--panel); color: var(--muted); border: 1px solid var(--border); font-weight: 500; }
+
+.site-foot { border-top: 1px solid var(--border); padding: 1.25rem clamp(1rem, 4vw, 2.5rem) 2rem; color: var(--faint); font-size: 0.75rem; }
+.site-foot a { color: var(--muted); }
 .board-wrap { overflow-x: auto; }
-.board { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 36rem; }
+.board { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 30rem; }
 .board th, .board td { text-align: left; padding: 0.45rem 0.35rem; border-bottom: 1px solid var(--border); }
 .board th { font-size: 0.68rem; color: var(--faint); font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
 
 @media (max-width: 640px) {
-  .hero-stats { grid-template-columns: 1fr; }
   .metrics { grid-template-columns: 1fr; }
 }

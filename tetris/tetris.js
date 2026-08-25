@@ -15,7 +15,7 @@ J:[[1,0,0],[1,1,1]],
 L:[[0,0,1],[1,1,1]]
 };
 const colors={I:'#00f0f0',O:'#f0f000',T:'#a000f0',S:'#00f000',Z:'#f00000',J:'#0000f0',L:'#f0a000'};
-let bag=[], current=null, next=null, hold=null, x=0,y=0,rot=0;
+let bag=[], current=null, x=0,y=0,rot=0;
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function refillBag(){bag=shuffle(['I','O','T','S','Z','J','L']);}
 function spawn(){if(bag.length===0)refillBag();current=bag.pop();x=3;y=0;rot=0;if(collide()){paused=true;alert('Top out');}}

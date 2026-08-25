@@ -4,12 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tetris Autopilot — Plazir-15 Civic Arcade</title>
+<meta name="description" content="Tetris Autopilot — a zone-biased self-playing Tetris from the Plazir-15 civic arcade, with manual override.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#061014">
+<link rel="canonical" href="https://veigapunk.github.io/plazir-15-site/tetris/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tetris Autopilot — Plazir-15 Civic Arcade">
+<meta property="og:description" content="A zone-biased self-playing Tetris from the Plazir-15 civic arcade, with manual override.">
+<meta property="og:url" content="https://veigapunk.github.io/plazir-15-site/tetris/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="tetris.css">
 </head>
 <body>
-<header><a href="../">← Plazir-15</a> | Tetris Autopilot · Game 02</header>
-<main>
-<canvas id="game" width="300" height="600"></canvas>
+<a class="skip-link" href="#main">Skip to game</a>
+<header class="top"><a href="../">← Plazir-15</a> <span>Tetris Autopilot · Game 02</span></header>
+<main id="main">
+<canvas id="game" width="300" height="600" aria-label="Tetris board"></canvas>
 <div id="ui">
 <button id="mode">Toggle Auto/Manual (G)</button>
 <button id="pause">Pause</button>
@@ -17,6 +28,9 @@
 <p>Mode: <span id="status">auto</span></p>
 </div>
 </main>
-<script src="tetris.js"></script>
+<footer class="site-foot">
+<p>Part of the <a href="../">Plazir-15 Fan Codex</a> — a non-commercial fan project.</p>
+</footer>
+<script src="tetris.js" defer></script>
 </body>
 </html>

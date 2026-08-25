@@ -246,6 +246,13 @@ button:not(:disabled),
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .site-nav a {
+    padding: 0.5rem 0.45rem;
+    font-size: 0.8125rem;
+  }
+}
+
 .nav-toggle {
   display: inline-flex;
   width: 2.75rem;

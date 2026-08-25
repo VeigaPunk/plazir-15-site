@@ -498,6 +498,7 @@ main:focus {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.25rem, 3vw, 1.8rem);
   line-height: 1.75;
+  overflow-wrap: break-word;
 }
 
 blockquote {
