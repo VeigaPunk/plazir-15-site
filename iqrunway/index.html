@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IQRUNWAY | Plazir-15</title>
+  <meta name="description" content="IQRUNWAY is a public-safe board for model-agent browser assessment runs, with honest score provenance, completion state, routing, age application, and protocol time." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#070d10" />
+  <link rel="canonical" href="https://veigapunk.github.io/plazir-15-site/iqrunway/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="IQRUNWAY | Plazir-15" />
+  <meta property="og:description" content="A public-safe model intelligence assessment board with score provenance and no invented rankings." />
+  <meta property="og:url" content="https://veigapunk.github.io/plazir-15-site/iqrunway/" />
+  <meta name="twitter:card" content="summary" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="../assets/fonts/JetBrainsMonoNLNerdFontMono-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="iqrunway.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="top">
+    <a class="brand" href="../#leisure">
+      <strong>Plazir-15</strong>
+      <small>Leisure deck · IQRUNWAY</small>
+    </a>
+    <nav class="nav" aria-label="IQRUNWAY sections">
+      <a href="#board">Board</a>
+      <a href="#runs">Run files</a>
+      <a href="#method">Read the board</a>
+      <a href="../#leisure">← Leisure</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Entertainment for humans · entry #5</p>
+      <h1 id="page-title">IQRUNWAY</h1>
+      <p class="lede">Model agents, assessment sites, browser protocols—and the receipts that can safely be shown.</p>
+      <p class="notice"><strong>Not an IQ league.</strong> These are model-agent browser runs, not clinical tests or human IQ measurements. A site score is reported only when the site actually returned it. Missing results stay missing.</p>
+      <dl class="hero-stats" aria-label="Board summary">
+        <div class="stat"><dt id="run-count">—</dt><dd>public runs</dd></div>
+        <div class="stat"><dt id="score-count">—</dt><dd>overall scores</dd></div>
+        <div class="stat"><dt>0</dt><dd>invented ranks</dd></div>
+        <div class="stat"><dt>public-safe</dt><dd>data boundary</dd></div>
+      </dl>
+    </section>
+
+    <section class="panel" id="board" aria-labelledby="board-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Board · evidence before order</p>
+          <h2 id="board-title">Run board</h2>
+        </div>
+        <p class="section-note">Rows are latest-updated first, not ranked.</p>
+      </div>
+
+      <div class="load-state" id="load-state" role="status" aria-live="polite">Loading public run data…</div>
+      <div class="board-wrap" id="board-wrap" hidden>
+        <table class="board">
+          <caption>Public-safe model-agent assessment runs. “Not scored —” means the source returned no overall value.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Observed model / run</th>
+              <th scope="col">Battery / progress</th>
+              <th scope="col">Overall score</th>
+              <th scope="col">Age</th>
+              <th scope="col">Served / requested route</th>
+              <th scope="col">Protocol elapsed</th>
+              <th scope="col">Lifecycle</th>
+            </tr>
+          </thead>
+          <tbody id="board-body"></tbody>
+        </table>
+      </div>
+      <noscript><p class="load-state error">JavaScript is required to render the local run data. The methodology below remains available.</p></noscript>
+    </section>
+
+    <section id="runs" aria-labelledby="runs-title">
+      <div class="section-head run-heading">
+        <div>
+          <p class="eyebrow">Run files · public summaries</p>
+          <h2 id="runs-title">What happened</h2>
+        </div>
+        <p class="section-note">No prompts, items, screenshots, sessions, or private transcripts.</p>
+      </div>
+      <div class="run-grid" id="run-panels"></div>
+    </section>
+
+    <section class="panel method" id="method" aria-labelledby="method-title">
+      <p class="eyebrow">Method · how to read this</p>
+      <h2 id="method-title">Separate the evidence</h2>
+      <div class="method-grid">
+        <article>
+          <h3>Score provenance</h3>
+          <p><strong>Site-reported subtest score</strong> means a number visibly returned by the assessment site for that subtest. <strong>Not scored —</strong> means no overall value was returned—not zero, failure, or an invitation to estimate.</p>
+        </article>
+        <article>
+          <h3>Age application</h3>
+          <p><strong>Age 27 applied</strong> appears only when age 27 was actually entered on the site. Otherwise the board says <strong>target age 27 · not applied</strong>. A target is not evidence of application.</p>
+        </article>
+        <article>
+          <h3>Completion</h3>
+          <p>Every subtest keeps its own state: completed, stopped, blocked, or not started. One completed subtest does not become a completed battery.</p>
+        </article>
+        <article>
+          <h3>Route and fallback</h3>
+          <p>The requested model route and observed served route are shown separately. Fallback is reported from run attestation, never inferred from a display name.</p>
+        </article>
+        <article>
+          <h3>Protocol time</h3>
+          <p>Elapsed time is agent + browser protocol time for the stated scope. It is not isolated model latency, processing speed, clinical timing, or evidence about human intelligence.</p>
+        </article>
+        <article>
+          <h3>Public boundary</h3>
+          <p>The board stores metadata and outcome summaries only. Protected assessment content, raw browser state, screenshots, personal identifiers, private paths, and owner-private transcripts stay out.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <p>Part of the <a href="../">Plazir-15 Fan Codex</a> — a non-commercial fan project.</p>
+  </footer>
+
+  <script src="iqrunway.js" type="module"></script>
+</body>
+</html>

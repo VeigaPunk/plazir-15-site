@@ -720,6 +720,18 @@ button:not(:disabled),
   }
 }
 
+@media (min-width: 768px) {
+  .leisure-card--iqrunway {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1100px) {
+  .leisure-card--iqrunway {
+    grid-column: 2 / span 2;
+  }
+}
+
 .leisure-card {
   display: flex;
   flex-direction: column;
@@ -793,6 +805,13 @@ button:not(:disabled),
   background: color-mix(in oklab, var(--slop-pink) 14%, transparent);
   color: var(--slop-pink);
   box-shadow: 0 0 1.6rem color-mix(in oklab, var(--slop-pink) 35%, transparent);
+}
+
+.leisure-game-mark--iq {
+  border-color: color-mix(in oklab, var(--teal) 58%, transparent);
+  background: color-mix(in oklab, var(--teal) 14%, transparent);
+  color: var(--chrome-bright);
+  box-shadow: 0 0 1.8rem color-mix(in oklab, var(--teal) 35%, transparent);
 }
 
 .leisure-mini {
@@ -890,6 +909,31 @@ button:not(:disabled),
   background: linear-gradient(90deg, var(--leaf), var(--teal));
 }
 
+.leisure-mini--iqrunway {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 0.55rem;
+  padding: 1rem;
+  background:
+    linear-gradient(90deg, transparent 0 49.8%, color-mix(in oklab, var(--teal) 32%, transparent) 49.8% 50.2%, transparent 50.2%),
+    repeating-linear-gradient(90deg, color-mix(in oklab, var(--chrome) 4%, transparent) 0 12%, transparent 12% 16%),
+    var(--bg-deep);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: var(--chrome);
+}
+
+.leisure-mini--iqrunway span {
+  position: relative;
+  padding: 0.45rem 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: color-mix(in oklab, var(--surface-2) 92%, transparent);
+}
+
 .leisure-card--slopcast {
   border-color: color-mix(in oklab, var(--slop-pink) 22%, var(--border));
   background:
@@ -900,6 +944,17 @@ button:not(:disabled),
 
 .leisure-card--slopcast .leisure-card-kicker {
   color: color-mix(in oklab, var(--slop-pink) 75%, var(--faint));
+}
+
+.leisure-card--iqrunway {
+  border-color: color-mix(in oklab, var(--teal) 24%, var(--border));
+  background:
+    radial-gradient(circle at 85% 0%, color-mix(in oklab, var(--teal) 14%, transparent), transparent 44%),
+    var(--surface);
+}
+
+.leisure-card--iqrunway .leisure-card-kicker {
+  color: color-mix(in oklab, var(--teal) 78%, var(--faint));
 }
 
 .leisure-slop-stage {

@@ -14,6 +14,8 @@ Unofficial non-commercial fan informational site for the Star Wars planet **Plaz
 
 **Token Speedrun:** https://ds4cc.com/speedrun/
 
+**IQRUNWAY:** https://veigapunk.github.io/plazir-15-site/iqrunway/
+
 ## Theme
 
 A design homage to the planet’s bio-dome utopia — and a quiet parallel to **directed abundance**: droid (agent) labor underwriting leisure, with a pacifist pluralistic charter. Framed against acceleration vs deceleration without forcing the metaphor.

@@ -1,0 +1,87 @@
+{
+  "schema": "iqrunway.public.v1",
+  "updatedAt": "2026-09-11T16:32:29Z",
+  "ordering": "updatedAt-descending-not-ranked",
+  "runs": [
+    {
+      "id": "grok-4-6-xhigh-abbreviated-2026-09-11",
+      "title": "Grok 4.6 xhigh — abbreviated battery",
+      "observedAt": "2026-09-11",
+      "updatedAt": "2026-09-11T16:32:29Z",
+      "status": "stopped",
+      "scoreStatus": "not-scored",
+      "summary": "The abbreviated battery stopped at 1/3 subtests. The site reported an Analogies score, but no overall battery score. Figure Weights and Digit Span were not started, so this run is not comparable or ranked.",
+      "model": {
+        "label": "Grok 4.6",
+        "observed": "xai-oauth/grok-4.6 · xhigh",
+        "provider": "xAI",
+        "effort": "xhigh"
+      },
+      "battery": {
+        "label": "CORE abbreviated",
+        "plannedSubtests": 3,
+        "completedSubtests": 1
+      },
+      "age": {
+        "targetYears": 27,
+        "appliedOnSite": true,
+        "scope": "Analogies start form"
+      },
+      "route": {
+        "requested": "xai-oauth/grok-4.6:xhigh",
+        "served": "xai-oauth/grok-4.6",
+        "observedEffort": "xhigh",
+        "fallback": false,
+        "attestedBeforeAssessment": true
+      },
+      "score": {
+        "overall": {
+          "value": null,
+          "status": "not-scored",
+          "provenance": "No overall battery score was returned"
+        }
+      },
+      "protocolTime": {
+        "elapsedSeconds": 263,
+        "scope": "Analogies agent + browser protocol clock",
+        "modelOnlySeconds": null,
+        "browserOnlySeconds": null,
+        "interpretation": "Not model latency and not intelligence evidence"
+      },
+      "subtests": [
+        {
+          "name": "Analogies",
+          "status": "completed",
+          "attempted": 34,
+          "blank": 0,
+          "elapsedSeconds": 263,
+          "siteScore": {
+            "value": 70,
+            "label": "Borderline",
+            "provenance": "Visible on the site's login interstitial; no login or purchase"
+          }
+        },
+        {
+          "name": "Figure Weights",
+          "status": "not-started",
+          "siteScore": {
+            "value": null,
+            "provenance": "No site score returned"
+          }
+        },
+        {
+          "name": "Digit Span",
+          "status": "not-started",
+          "siteScore": {
+            "value": null,
+            "provenance": "No site score returned"
+          }
+        }
+      ],
+      "provenance": {
+        "note": "Public-safe run metadata and result summary. No protected assessment content, screenshots, raw browser state, personal identifiers, private paths, or private transcripts are included.",
+        "comparability": "Not comparable to clinical or human IQ results"
+      }
+    }
+  ]
+}

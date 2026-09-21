@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://veigapunk.github.io/plazir-15-site/iqrunway/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://veigapunk.github.io/plazir-15-site/tetris/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

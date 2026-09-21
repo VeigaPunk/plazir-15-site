@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-11 — IQRUNWAY leisure #5
+
+- Added a public-safe model assessment board at `/iqrunway/`
+- Added IQRUNWAY as Entertainment for humans entry #5
+- Kept site-reported outcomes distinct from overall IQ, rankings, and human latency claims
+- Excluded protected test items, screenshots, transcripts, private paths, and personal identifiers
+
 ## 2026-08-25 — Slopcast leisure deck cards
 
 - Leisure deck is a 4-card grid; each card mirrors its element (snake board, 512QA ranks, speedrun meter, Slopcast studio)
