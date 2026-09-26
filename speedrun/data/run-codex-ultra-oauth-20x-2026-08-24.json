@@ -78,8 +78,7 @@
   "links": {
     "codex": "https://chatgpt.com/",
     "board": "./",
-    "xbgst_codex": "https://github.com/VeigaPunk/xbgst-codex",
-    "hangar_readme": "/home/vgpnk/Projects/xbgst/xbgst-codex/README.md"
+    "xbgst_codex": "https://github.com/VeigaPunk/xbgst-codex"
   },
   "tags": [
     "codex",
